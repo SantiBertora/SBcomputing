@@ -1,0 +1,12 @@
+.brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    height: fit-content;
+    align-self: center;
+}
