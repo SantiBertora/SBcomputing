@@ -10,8 +10,11 @@ const App = () => {
         <header>
           <NavBar/>
         </header>
+        
         <ItemListContainer greeting={"Bienvenido a SB Computing"}/>
+        
       </ChakraProvider>
+
 
     </>
   )

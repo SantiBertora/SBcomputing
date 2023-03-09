@@ -33,3 +33,13 @@ header {
 body {
     background-color: rgb(146, 146, 146);
 }
+
+.contador {
+    display: flex;
+    justify-content: space-between;
+    width: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
