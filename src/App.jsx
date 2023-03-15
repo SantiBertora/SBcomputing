@@ -4,6 +4,8 @@ import { ChakraProvider } from '@chakra-ui/react'
 import ItemListContainer from './components/ItemListContainer'
 
 const App = () => {
+
+
   return (
     <>
       <ChakraProvider>
@@ -11,7 +13,9 @@ const App = () => {
           <NavBar/>
         </header>
         
-        <ItemListContainer greeting={"Bienvenido a SB Computing"}/>
+        <ItemListContainer/>
+
+
         
       </ChakraProvider>
 

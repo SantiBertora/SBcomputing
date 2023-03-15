@@ -1,0 +1,106 @@
+[
+    {
+        "nombre" : "Core I7 12700f - 16Gb - RTX3060",
+        "categoria" : "Equipos Armados",
+        "id" : "EA001",
+        "marca" : "Intel",
+        "stock" : 1,
+        "imagen" : "https://cdn.coolermaster.com/media/4803/td500-argb-block-02-crystalline-panels-imageleftorright.png",
+        "precio" : 1750,
+        "descripcion" : "Gabinete Cooler Master TD500 ARGB-Fuente Gigabyte P550B 80 Plus Bronze-Mother Asus / Gigabyte B660M DDR4-Procesador Intel Core I7 12700f 12 núcleos 20 hilos hasta 4,9Ghz con Disipador Cooler Master Hyper 212 Black Edition-Memoria 16Gb DDR4 3200mhz-Disco SSD PCIe Kingston NV2 1Tb-Gráficos Geforce RTX3060"
+    },
+    {
+        "nombre" : "Ryzen 7 7700X - 16gb - RTX4070Ti",
+        "categoria" : "Equipos Armados",
+        "id" : "EA002",
+        "marca" : "AMD",
+        "stock" : 1,
+        "imagen" : "https://cdn.coolermaster.com/media/2728/haf500_webpage_1175x1120_imagewithtext-6-imageleftorright.png",
+        "precio" : 3300,
+        "descripcion" : "Gabinete Cooler Master HAF500 negro o blanco a elección con fanes ARGB-Fuente Cooler Master MWE Bronze 750W-Mother Gigabyte B650M GAMING X AX-Procesador AMD Ryzen 7 7700x 8 núcleos 16 hilos 4.5GHz / 5.4GHz-Watercooling Cooler Master Liquid ML240L V2 RGB-Memoria Kingston Fury Beast 16Gb DDR5 6000mhz-Disco SSD Pcie 4.0 Kingston NV2 1Tb-Gráficos Nvidia RTX4070Ti"
+    },
+    {
+        "nombre" : "Cougar MG120-g mATX",
+        "categoria" : "Gabinetes",
+        "id": "G001",
+        "marca" : "Cougar",
+        "stock" : 5,
+        "imagen" : "https://cougargaming.com/_cgrwdr_/wwdpp/wp-content/uploads/2019/06/01-3.png",
+        "precio" : 60,
+        "descripcion" : "MG120G tiene un diseño elegante y compacto con un panel frontal transparente de espejo oscuro y una ventana lateral de vidrio templado, que muestra una vista clara y atractiva de los componentes internos de su computadora. Además, admite seis ventiladores de enfriamiento y tres radiadores para un rendimiento de enfriamiento optimizado"
+    },
+    {
+        "nombre" : "ASUS ROG STRIX HELIOS GX601",
+        "categoria" : "Gabinetes",
+        "id" : "G002",
+        "marca" : "ASUS",
+        "stock" : 2,
+        "imagen" : "https://dlcdnwebimgs.asus.com/gain/117ACAB9-87EE-4E2B-8D1C-CE9E578768BB/w717/h525",
+        "precio" : 480,
+        "descripcion" : "Diseño y estética de primera calidad-Construcción limpia y fácil-Montaje de GPU versátil-Listo para una refrigeración seria-Panel de E / S avanzado-Asas de estuche cómodas"
+    },
+    {
+        "nombre" : "Cougar XTC600w 80 Plus",
+        "categoria" : "Fuentes",
+        "id" : "F001",
+        "marca" : "Cougar",
+        "stock" : 7,
+        "imagen" : "https://i0.wp.com/www.aslanstoreuy.com/wp-content/uploads/2020/08/Cougar-Xtc-80-Plus-White-min.png?fit=900%2C900&ssl=1",
+        "precio" : 65,
+        "descripcion" : "Fuente Cougar XTC 600, Certificada 80 Plus White . Cougar mejora el rendimiento con esta fuente de Fiabilidad rígida, silencio extremo. Eficiencia de conversión de energía, Hasta 86% de eficiencia bajo 230V."
+    },
+    {
+        "nombre" : "ASUS ROG STRIX 850G Gold",
+        "categoria" : "Fuentes",
+        "id" : "F002",
+        "marca" : "ASUS",
+        "stock" : 3,
+        "imagen" : "https://dlcdnwebimgs.asus.com/gain/ECB79DEC-A4F3-4F96-9411-6D2690B8E573/w717/h525",
+        "precio" : 250,
+        "descripcion" : "La fuente de alimentación ROG Strix 850W Gold brinda un rendimiento de enfriamiento superior a la corriente principal."
+    },
+    {
+        "nombre" : "Asus TUF B650-Plus WIFI",
+        "categoria" : "Motherboards",
+        "id" : "M001",
+        "compatibilidad" : "AM5",
+        "marca" : "ASUS",
+        "stock" : 4,
+        "imagen" : "https://dlcdnwebimgs.asus.com/files/media/7f358aac-d2d6-4dd0-8fba-dea85469a22e/V1/img/kv-main.png",
+        "precio" : 400,
+        "descripcion" : "ASUS TUF GAMING B650PLUS WIFI toma todos los elementos esenciales de los últimos procesadores de la serie AMD Ryzen 7000 y los combina con funciones listas para jugar y durabilidad comprobada. Diseñada con componentes de grado militar, una solución de alimentación mejorada y un sistema de refrigeración integral, esta placa base supera las expectativas con un rendimiento sólido y estable para juegos de maratón. Las placas base TUF GAMING también se someten a rigurosas pruebas de resistencia para garantizar que puedan soportar condiciones en las que otras pueden fallar. Estéticamente, este modelo incorpora elementos de diseño geométricos y de color negro oscuro para reflejar la confiabilidad y estabilidad que define a la serie TUF GAMING."
+    },
+    {
+        "nombre" : "Asus ROG Maximus Z690 Formula",
+        "categoria" : "Motherboards",
+        "id" : "M002",
+        "compatibilidad" : "lga1700",
+        "marca" : "ASUS",
+        "stock" : 1,
+        "imagen" : "https://dlcdnwebimgs.asus.com/gain/1E88FFA5-D6AD-4A5C-9E4E-045584015E56/w717/h525",
+        "precio" : 1290,
+        "descripcion" : "Tarjeta madre Intel® Z690 ATX con 20 + 1 fases de poder, DDR5 con OptiMem III, cinco M.2, puerto de panel frontal USB 3.2 Gen 2x2, Dual Thunderbolt™ 4, PCIe® 5.0, Wi-Fi 6E integrado, 10Gb Ethernet e iluminación Aura Sync RGB."
+    },
+    {
+        "nombre" : "Ryzen 9 7950X",
+        "categoria" : "Procesadores",
+        "id" : "CPU001",
+        "compatibilidad" : "AM5",
+        "marca" : "AMD",
+        "stock" : 2,
+        "imagen" : "https://thotcomputacion.com.uy/wp-content/uploads/2022/10/4961_1_ed639f06efaa4bed83d6dfda93c467f4.jpg",
+        "precio" : 1000,
+        "descripcion" : "N.° de núcleos de CPU 16-N.° de subprocesos 32-Reloj de aumento máx. Hasta 5.7GHz-Reloj base 4.5GHz"
+    },
+    {
+        "nombre" : "Core i9 13900K Raptor Lake",
+        "categoria" : "Procesadores",
+        "id" : "CPU002",
+        "compatibilidad" : "lga1700",
+        "marca" : "Intel",
+        "stock" : 2,
+        "imagen" : "https://thotcomputacion.com.uy/wp-content/uploads/2022/10/4987_1_44a98544508542ec8a4d324d0090ed74.jpg",
+        "precio" : 930,
+        "descripcion" : "Núcleos totales 24-Subprocesos totales 32-Frecuencia turbo máxima 5,80 GHz"
+    }
+]
