@@ -1,31 +1,32 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import { Flex, Spacer, Box, Menu, MenuButton, MenuList, MenuItem, } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 import Brand from './Brand'
 
 const NavBar = () => {
     return (
-        <div>
+        <div className='header'>
             <Flex>
                 <Box p='4'>
-                    <Brand/>
+                    <Link to={'/'}><Brand/></Link>
                 </Box>
                 <Menu>
                     <MenuButton className='btn'>
                     Categorías
                     </MenuButton>
                     <MenuList>
-                        <MenuItem>Equipos Armados</MenuItem>
-                        <MenuItem>Componentes</MenuItem>
-                        <MenuItem>Monitores</MenuItem>
-                        <MenuItem>Periféricos</MenuItem>
-                        <MenuItem>Notebooks</MenuItem>
+                        <Link to={`/categoria/equipos`}><MenuItem>Equipos Armados</MenuItem></Link>
+                        <Link to={`/categoria/componentes`}><MenuItem>Componentes</MenuItem></Link>
+                        <Link to={`/categoria/monitores`}><MenuItem>Monitores</MenuItem></Link>
+                        <Link to={`/categoria/perifericos`}><MenuItem>Periféricos</MenuItem></Link>
+                        <Link to={`/categoria/notebooks`}><MenuItem>Notebooks</MenuItem></Link>
                     </MenuList>
                 </Menu>
                 <Spacer />
-                <Box p='4'>
-                    <CartWidget/>
+                <Box p='4' className='cartWidget'>
+                    <Link to={'/Cart'}><CartWidget/></Link>
                 </Box>
             </Flex>
         </div>

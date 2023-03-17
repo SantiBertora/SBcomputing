@@ -12,6 +12,8 @@
     align-self: center;
     background-color: rgb(146, 146, 146);
     font-family: 'Montserrat', sans-serif;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 
 
 }
@@ -26,8 +28,8 @@
     
 }
 
-header {
-    background-color: white;
+.header {
+    background-color: rgb(189, 189, 189);
 }
 
 body {
@@ -44,8 +46,37 @@ body {
     border-radius: 0.5rem;
 }
 
-.listaProductos {
+.itemList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 1rem;
+}
+
+.cardContent {
+    align-items: center;
+}
+
+.cartWidget {
+    align-self: center;
+}
+
+.contenedorDetalles {
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion {
+    text-align: center;
+}
+
+.contenedorDelContador {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

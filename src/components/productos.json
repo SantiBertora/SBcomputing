@@ -1,7 +1,7 @@
 [
     {
         "nombre" : "Core I7 12700f - 16Gb - RTX3060",
-        "categoria" : "Equipos Armados",
+        "categoria" : "Equipos",
         "id" : "EA001",
         "marca" : "Intel",
         "stock" : 1,
@@ -11,7 +11,7 @@
     },
     {
         "nombre" : "Ryzen 7 7700X - 16gb - RTX4070Ti",
-        "categoria" : "Equipos Armados",
+        "categoria" : "Equipos",
         "id" : "EA002",
         "marca" : "AMD",
         "stock" : 1,
@@ -21,7 +21,7 @@
     },
     {
         "nombre" : "Cougar MG120-g mATX",
-        "categoria" : "Gabinetes",
+        "categoria" : "Componentes",
         "id": "G001",
         "marca" : "Cougar",
         "stock" : 5,
@@ -31,7 +31,7 @@
     },
     {
         "nombre" : "ASUS ROG STRIX HELIOS GX601",
-        "categoria" : "Gabinetes",
+        "categoria" : "Componentes",
         "id" : "G002",
         "marca" : "ASUS",
         "stock" : 2,
@@ -41,7 +41,7 @@
     },
     {
         "nombre" : "Cougar XTC600w 80 Plus",
-        "categoria" : "Fuentes",
+        "categoria" : "Componentes",
         "id" : "F001",
         "marca" : "Cougar",
         "stock" : 7,
@@ -51,7 +51,7 @@
     },
     {
         "nombre" : "ASUS ROG STRIX 850G Gold",
-        "categoria" : "Fuentes",
+        "categoria" : "Componentes",
         "id" : "F002",
         "marca" : "ASUS",
         "stock" : 3,
@@ -61,7 +61,7 @@
     },
     {
         "nombre" : "Asus TUF B650-Plus WIFI",
-        "categoria" : "Motherboards",
+        "categoria" : "Componentes",
         "id" : "M001",
         "compatibilidad" : "AM5",
         "marca" : "ASUS",
@@ -72,7 +72,7 @@
     },
     {
         "nombre" : "Asus ROG Maximus Z690 Formula",
-        "categoria" : "Motherboards",
+        "categoria" : "Componentes",
         "id" : "M002",
         "compatibilidad" : "lga1700",
         "marca" : "ASUS",
@@ -83,7 +83,7 @@
     },
     {
         "nombre" : "Ryzen 9 7950X",
-        "categoria" : "Procesadores",
+        "categoria" : "Componentes",
         "id" : "CPU001",
         "compatibilidad" : "AM5",
         "marca" : "AMD",
@@ -94,7 +94,7 @@
     },
     {
         "nombre" : "Core i9 13900K Raptor Lake",
-        "categoria" : "Procesadores",
+        "categoria" : "Componentes",
         "id" : "CPU002",
         "compatibilidad" : "lga1700",
         "marca" : "Intel",
