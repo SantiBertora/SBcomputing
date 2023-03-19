@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Item = ({ producto }) => {
 
-  console.log(producto);
   return (
     <Link to={`/producto/${producto.id}`}>
     <Card maxW='sm' className='card'>

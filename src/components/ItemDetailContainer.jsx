@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom'
 const ItemDetailContainer = () => {
 
   const {id} = useParams()
-  console.log(id)
 
   const getProductos = () => {
     return new Promise ((resolve, reject) => {
@@ -29,9 +28,8 @@ const ItemDetailContainer = () => {
 
   fetchingProductos();
 
-  let productoARenderizar = productos.find((producto) => producto.id === id)
 
-  console.log(productoARenderizar)
+  let productoARenderizar = productos.find((producto) => producto.id === id)
 
   return (
     <div>

@@ -4,8 +4,6 @@ import { Card, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, Butto
 
 const ItemDetail = ({producto}) => {
 
-  console.log(producto)
-
   return (
     <div className='contenedorDetalles'>
       <Card maxW='sm'>

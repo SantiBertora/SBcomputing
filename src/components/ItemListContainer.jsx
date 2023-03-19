@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom'
 const ItemListContainer = () => {
 
   const {categoria}  = useParams();
-  console.log(categoria)
 
   const getProductos = () => {
     return new Promise ((resolve, reject) => {

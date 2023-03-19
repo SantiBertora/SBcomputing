@@ -2,7 +2,6 @@ import Item from './Item'
 
 const ItemList = ({productos}) => {
 
-console.log(productos);
   return (
     <div className='itemList'>
       {productos.map((producto) => (

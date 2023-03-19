@@ -19,9 +19,9 @@ const NavBar = () => {
                     <MenuList>
                         <Link to={`/categoria/equipos`}><MenuItem>Equipos Armados</MenuItem></Link>
                         <Link to={`/categoria/componentes`}><MenuItem>Componentes</MenuItem></Link>
-                        <Link to={`/categoria/monitores`}><MenuItem>Monitores</MenuItem></Link>
-                        <Link to={`/categoria/perifericos`}><MenuItem>Periféricos</MenuItem></Link>
-                        <Link to={`/categoria/notebooks`}><MenuItem>Notebooks</MenuItem></Link>
+                        <Link to={`/categoria/monitores`}><MenuItem isDisabled="true">Monitores</MenuItem></Link>
+                        <Link to={`/categoria/perifericos`}><MenuItem isDisabled="true">Periféricos</MenuItem></Link>
+                        <Link to={`/categoria/notebooks`}><MenuItem isDisabled="true">Notebooks</MenuItem></Link>
                     </MenuList>
                 </Menu>
                 <Spacer />
