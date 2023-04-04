@@ -1,0 +1,59 @@
+[33mcommit e277fa5b39857c522758302c3285271d122544d7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Sun Mar 19 01:30:47 2023 -0300
+
+    Markdown
+
+[33mcommit ae8e4f66eee36773ecb133db92a8b011cc4a842f[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Fri Mar 17 05:34:35 2023 -0300
+
+    navegacion entre categorias y productos
+
+[33mcommit 8bd4037cb494e7dd9b03a1f409343ce2c3ebb500[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Wed Mar 15 12:02:48 2023 -0300
+
+    agregando items
+
+[33mcommit 5a3dadcef19b3e4e11d66b25df133cbd5759ae43[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Wed Mar 15 11:29:38 2023 -0300
+
+    creando items
+
+[33mcommit 880199cf82aa6136d3edeaaeae8e8c815617e037[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Thu Mar 9 02:11:55 2023 -0300
+
+    Contador agregado
+
+[33mcommit a530e5ecd069c52c827a9765ce426e8e4516a10f[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Mon Mar 6 18:44:55 2023 -0300
+
+    cambio atributo lang
+
+[33mcommit eb1ca9ff435916d0e32abe099c9564b11451077a[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Mon Mar 6 18:43:40 2023 -0300
+
+    cambio atributo lang
+
+[33mcommit bfebfee7595523d01f4e428ecd1731c8a30f72fd[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Mon Mar 6 14:43:43 2023 -0300
+
+    readmeeditado, nombre de la pagina e icono
+
+[33mcommit 37a11d6e3a0afbe5a93bde2402834fcaff4c7b6d[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Mon Mar 6 14:40:49 2023 -0300
+
+    editando README y agregando estilos
+
+[33mcommit 10e3f3b0942db5e3dec2cd4d4c486894b68f426a[m
+Author: Santiago Bertora <santibertoratrujillo@gmail.com>
+Date:   Mon Mar 6 13:38:08 2023 -0300
+
+    inicio de proyecto ecommerce

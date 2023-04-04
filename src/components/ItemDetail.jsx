@@ -24,12 +24,7 @@ const ItemDetail = ({producto}) => {
         </CardBody>
         <Divider />
         <CardFooter>
-          <ButtonGroup spacing='2' className='contenedorDelContador'>
-            <ItemCount/>
-            <Button variant='ghost' colorScheme='blue'>
-              Agregar al carro
-            </Button>
-          </ButtonGroup>
+          <ItemCount/>
         </CardFooter>
       </Card>
     </div>
