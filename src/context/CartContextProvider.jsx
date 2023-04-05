@@ -7,8 +7,16 @@ const CartContextProvider = ({children}) => {
 
     const [cart, setCart] = useState([])
 
-    const agregarProducto = (producto) => {
-        setCart([...cart, producto]);
+    const agregarProducto = (productoParaCarrito) => {
+        const index = cart.findIndex(producto => producto.id === productoParaCarrito.id);
+        if (index === -1) {
+            setCart([...cart, productoParaCarrito]);
+        } else if (index > -1 && cart[index].cantidad < productoParaCarrito.stock && cart[index].cantidad + productoParaCarrito.cantidad <= productoParaCarrito.stock){
+            cart[index].cantidad += productoParaCarrito.cantidad;
+            setCart([...cart]);
+        } else {
+            alert('No hay mas stock');
+        }
     }
 
     const eliminarProducto = (id) => {

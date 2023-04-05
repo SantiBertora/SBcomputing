@@ -1,22 +1,39 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { CartContext } from '../context/CartContextProvider'
 
+const ItemCount = ({producto}) => {
+    
+    const {agregarProducto, cart} = useContext(CartContext);
+    const [contador, setContador] = useState(0);
 
-const ItemCount = () => {
+    const sumar = () => {
+        contador < producto.stock ? setContador(contador + 1) : alert('No hay mas stock');
+    }
 
-    const [contador, setContador] = useState(0)
+    const restar = () => {
+        contador > 0 ? setContador(contador - 1) : alert('No hay productos');
+    }
 
-    const agregarAlCarrito = (e) => {
-        console.log(producto)
+    const obtenerProducto = () => {
+        const productoParaCarrito = {
+            id: producto.id,
+            nombre: producto.nombre,
+            precio: producto.precio,
+            stock: producto.stock,
+            cantidad: contador
+        }
+        agregarProducto(productoParaCarrito);
+        console.log(cart)
     }
 
     return (
         <div>
             <div className='contador'>
-                <button onClick={() => setContador(contador + 1)}>+</button>
+                <button onClick={sumar}>+</button>
                 <h5>{contador}</h5>
-            <   button onClick={() => setContador(contador - 1)}>-</button>
+            <   button onClick={restar}>-</button>
             </div>
-            <button onAdd={agregarAlCarrito}>
+            <button onClick={obtenerProducto}>
                 Agregar al carro
             </button>
         </div>

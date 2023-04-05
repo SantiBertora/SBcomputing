@@ -24,7 +24,7 @@ const ItemDetail = ({producto}) => {
         </CardBody>
         <Divider />
         <CardFooter>
-          <ItemCount/>
+          <ItemCount producto={producto}/>
         </CardFooter>
       </Card>
     </div>
