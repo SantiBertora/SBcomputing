@@ -20,8 +20,8 @@ const CartContextProvider = ({children}) => {
     }
 
     const eliminarProducto = (id) => {
-        const index = cart.indexOf(producto.id);
-        cart = cart.splice(index, 1);
+        const index = cart.findIndex(producto => producto.id === id);
+        cart.splice(index, 1);
         setCart([...cart]);
     }
 

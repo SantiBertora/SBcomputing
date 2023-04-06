@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ItemList from './ItemList'
 import productos from './productos.json'
 import { useParams } from 'react-router-dom'
@@ -12,10 +12,13 @@ const ItemListContainer = () => {
     return new Promise ((resolve, reject) => {
       if (productos.length === 0){
         reject(new Error("No hay productos."))
+      } else {
+        useEffect(() => {
+          setTimeout(() => {
+            resolve(productos);
+          }, 10000);
+        }, [])
       }
-      setTimeout(() => {
-        resolve(productos);
-      }, 2000);
     })
   }
 

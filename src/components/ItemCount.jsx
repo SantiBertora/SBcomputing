@@ -20,6 +20,7 @@ const ItemCount = ({producto}) => {
             nombre: producto.nombre,
             precio: producto.precio,
             stock: producto.stock,
+            imagen: producto.imagen,
             cantidad: contador
         }
         agregarProducto(productoParaCarrito);
