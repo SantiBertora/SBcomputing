@@ -1,6 +1,6 @@
 import React from 'react'
 import ItemCount from './ItemCount'
-import { Card, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, ButtonGroup, Button } from '@chakra-ui/react'
+import { Card, CardBody, Image, Stack, Heading, Text, Divider, CardFooter } from '@chakra-ui/react'
 
 const ItemDetail = ({producto}) => {
 

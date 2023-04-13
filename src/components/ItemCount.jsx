@@ -3,7 +3,7 @@ import { CartContext } from '../context/CartContextProvider'
 
 const ItemCount = ({producto}) => {
     
-    const {agregarProducto, cart} = useContext(CartContext);
+    const {agregarProducto} = useContext(CartContext);
     const [contador, setContador] = useState(0);
 
     const sumar = () => {
@@ -24,7 +24,6 @@ const ItemCount = ({producto}) => {
             cantidad: contador
         }
         agregarProducto(productoParaCarrito);
-        console.log(cart)
     }
 
     return (

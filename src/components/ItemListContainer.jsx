@@ -1,36 +1,25 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import ItemList from './ItemList'
-import productos from './productos.json'
 import { useParams } from 'react-router-dom'
-
+import { collection, getDocs, getFirestore } from 'firebase/firestore'
+import Loading from './loading'
 
 const ItemListContainer = () => {
 
+  const [productos, setProductos] = useState([]);
   const {categoria}  = useParams();
+  const [loading, setLoading] = useState(true);
 
-  const getProductos = () => {
-    return new Promise ((resolve, reject) => {
-      if (productos.length === 0){
-        reject(new Error("No hay productos."))
-      } else {
-        useEffect(() => {
-          setTimeout(() => {
-            resolve(productos);
-          }, 10000);
-        }, [])
-      }
-    })
-  }
+  useEffect(() => {
+    const db = getFirestore();
 
-  async function fetchingProductos(){
-    try{
-      const productosFetched = await getProductos();
-    }catch(err){
-      console.log(err);
-    }
-  }
-
-  fetchingProductos();
+    const productosCollection = collection(db, "productos");
+    getDocs(productosCollection).then((snapshot) => {
+      const docs = snapshot.docs.map((doc) => doc.data())
+      setProductos(docs);
+      setLoading(false);
+    });
+  }, []);
 
   const productosFiltrados = productos.filter((producto) => (producto.categoria.toLowerCase()) === categoria)
   
@@ -41,11 +30,19 @@ const ItemListContainer = () => {
     productosARenderizar = productos
   }
 
+  if(loading) {
+    return (
+      <div>
+        <Loading/>
+      </div>
+    )
+  } else {
   return (
     <div>
       <ItemList productos={productosARenderizar}/>
     </div>
   )
+  }
 }
 
 export default ItemListContainer

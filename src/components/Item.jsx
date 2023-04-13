@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Divider, ButtonGroup, Button } from '@chakra-ui/react'
+import { Card, CardBody, Image, Stack, Heading, Text } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 
 const Item = ({ producto }) => {

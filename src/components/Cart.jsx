@@ -2,14 +2,17 @@ import React from 'react'
 import { useContext } from 'react'
 import { CartContext } from '../context/CartContextProvider'
 import { Card, Image, Stack, Heading, Text, Button, CardBody, CardFooter } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
+import Formulario from './Formulario'
 
 const Cart = () => {
 
-const {cart, setCart, eliminarProducto} = useContext(CartContext);
-console.log(cart);
+const {cart, vaciarCarrito, eliminarProducto, totalCarrito} = useContext(CartContext);
 
   return (
     <div>
+      {cart.length === 0 && <h1>No hay productos en el carrito <a href="/">Volver a catálogo</a></h1>}
+      <button onClick={vaciarCarrito}>Vaciar Carrito</button>
       {cart.map((producto) => (
         
         <Card
@@ -45,6 +48,8 @@ console.log(cart);
         </Stack>
       </Card>)
       )}
+      <h1>Total: {totalCarrito()}</h1>
+      {cart.length > 0 && <Formulario/>}
     </div>
   )
 }

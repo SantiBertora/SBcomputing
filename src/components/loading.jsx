@@ -1,7 +1,7 @@
 import React from 'react'
 import { Spinner } from '@chakra-ui/react'
 
-const loading = () => {
+const Loading = () => {
   return (
     <div>
         <Spinner
@@ -16,4 +16,4 @@ const loading = () => {
   )
 }
 
-export default loading
+export default Loading
