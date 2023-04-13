@@ -32,7 +32,7 @@ const ItemListContainer = () => {
 
   if(loading) {
     return (
-      <div>
+      <div className='spinner'>
         <Loading/>
       </div>
     )

@@ -7,11 +7,11 @@ const ItemCount = ({producto}) => {
     const [contador, setContador] = useState(0);
 
     const sumar = () => {
-        contador < producto.stock ? setContador(contador + 1) : alert('No hay mas stock');
+        contador < producto.stock ? setContador(contador + 1) : swal('No hay mas stock', 'Lo sentimos.', "warning");
     }
 
     const restar = () => {
-        contador > 0 ? setContador(contador - 1) : alert('No hay productos');
+        contador > 0 ? setContador(contador - 1) : swal('No hay productos');
     }
 
     const obtenerProducto = () => {

@@ -26,7 +26,7 @@ const ItemDetailContainer = () => {
 
   if(loading) {
     return (
-      <div>
+      <div className='spinner'>
         <Loading/>
       </div>
     )

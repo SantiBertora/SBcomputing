@@ -1,5 +1,7 @@
 import React from 'react'
 import { createContext, useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const CartContext = createContext()
 
@@ -14,8 +16,9 @@ const CartContextProvider = ({children}) => {
         } else if (index > -1 && cart[index].cantidad < productoParaCarrito.stock && cart[index].cantidad + productoParaCarrito.cantidad <= productoParaCarrito.stock){
             cart[index].cantidad += productoParaCarrito.cantidad;
             setCart([...cart]);
+            toast("Producto agregado al carrito")
         } else {
-            alert('No hay mas stock');
+            swal("No hay mas stock", "Lo sentimos.", "warning");
         }
     }
 
@@ -34,7 +37,10 @@ const CartContextProvider = ({children}) => {
     }
 
     return (
+        <>
+        <ToastContainer/>
         <CartContext.Provider value={{cart, setCart, agregarProducto, eliminarProducto, vaciarCarrito, totalCarrito }}>{children}</CartContext.Provider>
+        </>
     )
 }
 

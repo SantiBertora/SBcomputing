@@ -2,7 +2,6 @@ import React from 'react'
 import { useContext } from 'react'
 import { CartContext } from '../context/CartContextProvider'
 import { Card, Image, Stack, Heading, Text, Button, CardBody, CardFooter } from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
 import Formulario from './Formulario'
 
 const Cart = () => {
@@ -10,13 +9,14 @@ const Cart = () => {
 const {cart, vaciarCarrito, eliminarProducto, totalCarrito} = useContext(CartContext);
 
   return (
-    <div>
-      {cart.length === 0 && <h1>No hay productos en el carrito <a href="/">Volver a catálogo</a></h1>}
-      <button onClick={vaciarCarrito}>Vaciar Carrito</button>
+    <div className='carro'>
+      {cart.length === 0 ? <h2 className='cartVacio'>No hay productos en el carrito. <a className='linkCatalogo' href="/">Volver a catálogo</a></h2> : <button onClick={vaciarCarrito}>Vaciar Carrito</button>
+}
       {cart.map((producto) => (
         
         <Card
         key={producto.id}
+        className='itemCarrito'
         direction={{ base: 'column', sm: 'row' }}
         overflow='hidden'
         variant='outline'
@@ -32,11 +32,11 @@ const {cart, vaciarCarrito, eliminarProducto, totalCarrito} = useContext(CartCon
           <CardBody>
             <Heading size='md'>{producto.nombre}</Heading>
       
-            <Text py='2'>
-              {producto.precio}
+            <Text className='precio' py='2'>
+              ${producto.precio} / unidad.
             </Text>
             <Text py='2'>
-              {producto.cantidad}
+              Cantidad: {producto.cantidad}
             </Text>
           </CardBody>
       
@@ -48,7 +48,7 @@ const {cart, vaciarCarrito, eliminarProducto, totalCarrito} = useContext(CartCon
         </Stack>
       </Card>)
       )}
-      <h1>Total: {totalCarrito()}</h1>
+      {cart.length > 0 && <h1 className='total'>Total: {totalCarrito()}</h1>}
       {cart.length > 0 && <Formulario/>}
     </div>
   )

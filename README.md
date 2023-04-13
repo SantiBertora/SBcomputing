@@ -27,7 +27,7 @@ Allí encontraremos la información incluida en la anterior tarjeta, y además:
 1. _Compatibilidad_ (En construcción🚧)
 1. **_Funcionalidad para agregar al carrito_**
 
-Dentro de dicha funcionalidad encontraremos un contador donde sumaremos la cantidad de productos que nos interesan, para luego agregarlos a nuestro carrito mediante un botón (En construcción🚧).
+Dentro de dicha funcionalidad encontraremos un contador donde sumaremos la cantidad de productos que nos interesan, para luego agregarlos a nuestro carrito mediante un botón.
 
 ![Funcionalidad de Contador](./public/markdown/gifContador.gif)
 

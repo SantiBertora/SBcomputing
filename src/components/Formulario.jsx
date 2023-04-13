@@ -18,6 +18,7 @@ const Formulario = () => {
         e.preventDefault();
 
         addDoc(ordenes, order).then(({id}) => {setIdOrden(id)});
+        swal("Compra realizada con éxito!", "El ID de su compra es: " + idOrden, "success");
         vaciarCarrito();
     };
 
@@ -32,12 +33,12 @@ const Formulario = () => {
   return (
     <div>
         <form onSubmit={guardarOrden}>
-            <input type="text" placeholder="Nombre Completo"  required onChange={(e) => setNombre(e.target.value)}/>
-            <input type="email" placeholder="Email" required onChange={(e) => setEmail(e.target.value)}/>
-            <input type="text" placeholder="Número de Telefono" required onChange={(e) => setTelefono(e.target.value)}/>
-            <button type="submit">Confirmar Compra</button>
+            <input className='input' type="text" placeholder="Nombre Completo"  required onChange={(e) => setNombre(e.target.value)}/>
+            <input className='input' type="email" placeholder="Email" required onChange={(e) => setEmail(e.target.value)}/>
+            <input className='input' type="text" placeholder="Número de Telefono" required onChange={(e) => setTelefono(e.target.value)}/>
+            <button className='btnComprar' type="submit">Confirmar Compra</button>
         </form>
-        <p>El ID de su compra es: <span>{idOrden}</span></p>
+        <p>El ID de su compra es: <span className='id'>{idOrden}</span></p>
     </div>
   )
 }
